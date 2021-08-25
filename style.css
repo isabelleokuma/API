@@ -84,10 +84,15 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+canvas {
+  width: 500px !important;
+  height: 500px !important;
+  margin: 0 auto;
+}
+
 footer {
-  text-align: right;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  margin: 5px 30px;
+  margin: 5px auto;
   color: #464646;
 }
