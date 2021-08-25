@@ -37,5 +37,5 @@ collection.forEach((brand) => {
 
 
 function makeupGet(param) {
-    return axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json?brand`);
+    return axios.get(`https://makeup-api.herokuapp.com/api/v1/products.json?brand`);
 }
