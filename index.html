@@ -40,10 +40,50 @@
     </div>
 
     <div class="card-graph">
-        <div id="piechart" style="width: 500px; height: 500px;"></div>
-    </div>
+        <canvas id="myChart" class="donut-chart"></canvas>
+      </div>
 </div>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+<script>
+    var ctx= document.getElementsByClassName("donut-chart");
+    var chartGraph = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels:["Pencil", "Lipstick", "Liquid", "Powder", "Lip Gloss","Cream","Concealer", "Null"],
+            datasets: [{
+                label: "qtd. marcas",
+                backgrounColor: ['#FF6384','#36A2EB','#4BC0C0','#FF9F40','#FFCD56','#F5E5FC','#F3DFBF','#C9CBCF'],
+                data:[2,3,2,2,3,2,1,1]
+            }]
+        },
+        options:{
+            responsive: true,
+            plugins:{
+                legend:{
+                    position:'top',
+                    labels:{
+                        font:{
+                            family: "'Montserrat', sans-serif",
+                        }
+                    }
+                },
+                title:{
+                    display:true,
+                    text: 'Relação Categorias x Marcas',
+                    font:{
+                        size: 16,
+                        family: "'Montserrat', sans-serif",
+                    }
+                }
+                
+            }
+        },
+    });
+            
+
+    
+</script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

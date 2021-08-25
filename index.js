@@ -4,42 +4,6 @@
 
 preencheTabela();
 
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(desenhaGrafico);
-
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(desenhaGrafico);
-
-      function desenhaGrafico() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Categorias', 'Marcas'],
-          ['Pencil',     2],
-          ['Lipstick',   3],
-          ['Liquid',  2],
-          ['Powder', 2],
-          ['Lip Gloss',    2],
-          ['Cream', 1],
-          ['Concealer', 1],
-          ['Null', 1]
-        ]);
-
-        var options = {
-          title: 'Relação Categoria x Marca'
-        };
-
-        desenhaGrafico.options={
-            font: {
-                family: "'Montserrat', sans-serif"
-            }
-        }
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-
-      
 
 const teste = []
 async function preencheTabela() {

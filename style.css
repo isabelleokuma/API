@@ -75,23 +75,12 @@ p {
   width: 55%;
   height: 550px;
   margin: 30px;
-  left: 320px;
-  top: 264px;
   text-align: center;
 
   background: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
 
-  font-family: "Montserrat", sans-serif;
-}
-
-#piechart {
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-}
-
-#piechart rect {
   font-family: "Montserrat", sans-serif;
 }
 
